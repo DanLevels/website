@@ -3,32 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LEVELS PIZZA — Coming Soon</title>
-  <meta name="description" content="Detroit-style pizza. Built like a game. Baked like an obsession. Coming soon." />
+  <title>LEVELS Pizza | Sourdough Pan Pizza</title>
+  <meta name="description" content="LEVELS Pizza — sourdough pan pizza made in Suffolk. A cheat code for a good night." />
+  <meta property="og:title" content="LEVELS Pizza" />
+  <meta property="og:description" content="A cheat code for a good night. Crispy cheese edges, fluffy sourdough base, big toppings, limited drops." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://levelspizza.com" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <div class="logo-wrap">
-        <img src="logo.png" alt="LEVELS PIZZA logo" class="logo" />
+  <main class="site-shell">
+    <header class="header" aria-label="Site header">
+      <a class="brand" href="/" aria-label="LEVELS Pizza home">
+        <img src="logo.png" alt="LEVELS Pizza" />
+      </a>
+
+      <a class="social-link" href="https://instagram.com/levels.pizza" target="_blank" rel="noopener noreferrer" aria-label="Follow LEVELS Pizza on Instagram">
+        <span>Follow</span>
+        <strong>@levels.pizza</strong>
+      </a>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Sourdough pan pizza</p>
+
+        <h1 id="hero-title">A cheat code<br />for a good night.</h1>
+
+        <p class="intro">Made in Suffolk. Built like a game. Baked like an obsession.</p>
+
+        <ul class="features" aria-label="Pizza features">
+          <li>Crispy cheese edges.</li>
+          <li>Fluffy sourdough base.</li>
+          <li>Big toppings.</li>
+          <li>Limited drops.</li>
+        </ul>
+
+        <div class="status-card">
+          <p class="coming">Coming soon</p>
+          <p class="insert">Insert coin. Insert pizza.</p>
+        </div>
       </div>
 
-      <p class="eyebrow">Coming soon</p>
-
-      <h1>Detroit-style pizza.<br />Built like a game.<br />Baked like an obsession.</h1>
-
-      <p class="intro">
-        Crispy cheese edges. Fluffy deep-pan dough. Big toppings. Limited drops.
-      </p>
-
-      <div class="actions">
-        <a class="button primary" href="mailto:dan@levelspizza.com?subject=LEVELS%20PIZZA%20waitlist&body=Add%20me%20to%20the%20LEVELS%20PIZZA%20waitlist.">Join the waitlist</a>
-        <a class="button secondary" href="https://instagram.com/levels.pizza" target="_blank" rel="noopener">Instagram</a>
+      <div class="hero-image" aria-label="8 by 10 inch square pan pizza with crispy cheese edges">
+        <img src="pizza-hero.jpg" alt="Square sourdough pan pizza with crispy cheese edges and pepperoni" />
       </div>
-
-      <p class="tagline">Insert coin. Insert pizza.</p>
     </section>
+
+    <section class="waitlist" aria-labelledby="waitlist-title">
+      <div>
+        <p class="mini-label">Be first in line</p>
+        <h2 id="waitlist-title">Launch drops, secret levels, first slices.</h2>
+      </div>
+
+      <form name="levels-waitlist" method="POST" data-netlify="true" class="waitlist-form">
+        <input type="hidden" name="form-name" value="levels-waitlist" />
+        <label for="email">Email address</label>
+        <div class="form-row">
+          <input id="email" name="email" type="email" placeholder="your@email.com" required />
+          <button type="submit">Join waitlist</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="tiles" aria-label="LEVELS Pizza values">
+      <article>
+        <p>Good pizza</p>
+        <span>Proper ingredients. No shortcuts.</span>
+      </article>
+      <article>
+        <p>Good games</p>
+        <span>Retro energy. No gimmicks.</span>
+      </article>
+      <article>
+        <p>Good people</p>
+        <span>Everyone welcome.</span>
+      </article>
+      <article>
+        <p>Good times</p>
+        <span>Eat. Play. Repeat.</span>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <img src="logo.png" alt="LEVELS Pizza" />
+      <p>A cheat code for a good night.</p>
+      <a href="https://instagram.com/levels.pizza" target="_blank" rel="noopener noreferrer">Instagram @levels.pizza</a>
+    </footer>
   </main>
 </body>
 </html>
