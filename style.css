@@ -48,7 +48,7 @@ body::before {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  margin-bottom: 42px;
+  margin-bottom: 12px;
 }
 
 .brand img {
@@ -309,7 +309,7 @@ button {
   }
 
   .header {
-    margin-bottom: 28px;
+    margin-bottom: 8px;
   }
 
   .social-link {
